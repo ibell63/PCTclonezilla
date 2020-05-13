@@ -1,0 +1,22 @@
+# if you want your script to do nothing and exit, just type
+
+exit
+
+# That will be the only actual command in this template, everything else will be commented out, 
+# so if it is accidentally run, it will just exit.
+
+# The current command that the clients run to get the command to run from pastebin is:
+# curl -s -f --fail-early --ssl-reqd --tlsv1.2 https://pastebin.com/raw/68izEAda | bash
+
+# If you want the autorun clients to connect to a lite server, change ocsPrerun to:
+
+# sudo ocs-live-get-img 10.80.15.17
+
+# and change 10.80.15.17 to whatever IP your lite server has.
+# Keep in mind that this server needs to be reachable by the clients on TCP ports 80 and 6969.
+# We have two IPs with ACLs that allow for this: 10.80.15.17 and 10.80.11.171.
+# I suggest using whatever IP corresponds to the subnet that your server is on.
+
+# If you would like to wipe the first SATA drive detected at startup, use this command:
+
+# echo "Wiping first detected SATA drive in 60 seconds." ; echo "Poweroff NOW if you don't want a drive wiped." ; echo "Will poweroff when finished." ; sleep 60 ; sudo ddrescue -f /dev/zero /dev/sda && sudo poweroff
