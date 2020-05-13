@@ -8,7 +8,7 @@ exit
 # The current command that the clients run to get the command to run from pastebin is:
 # curl -s -f --fail-early --ssl-reqd --tlsv1.2 https://pastebin.com/raw/68izEAda | bash
 
-# If you want the autorun clients to connect to a lite server, change ocsPrerun to:
+# If you want the autorun clients to connect to a lite server, change prerun.sh to:
 
 # sudo ocs-live-get-img 10.80.15.17
 
